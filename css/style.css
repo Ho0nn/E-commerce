@@ -37,16 +37,16 @@ button.white{
 /*Header Start*/
 
 #header{
-display: flex;
-align-items: Center;
-justify-content: space-between;
-padding: 20px 60px;
-background: #E3E6F3;
-box-shadow: 0 5px 10px rgb(0,0,0,0.06);
-z-index: 999;
-position: sticky;
-top:0;
-left: 0;
+    display: flex;
+    align-items: Center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left: 0;
 
 }
 
@@ -82,6 +82,14 @@ left: 0;
     left: 20px;
 
 }
+#mobile{
+    display: none;
+    align-items: center;
+
+}
+#close{
+    display: none;
+}
 
 /*home page*/
 #hero{
@@ -90,7 +98,7 @@ left: 0;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
-    padding: 0 80px;
+    /*padding: 0 80px;*/
     display:flex ;
     flex-direction: column;
     align-items: flex-start;
@@ -122,7 +130,7 @@ left: 0;
     flex-wrap: wrap;
 }
 #feature .fe-box{
-    width: 160px;
+    width: 180px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
@@ -170,8 +178,6 @@ left: 0;
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
-
-
 }
 #product1 .pro{
     width: 23%;
@@ -185,9 +191,6 @@ left: 0;
     margin: 15px 0;
     transition: 0.2s ease;
 }
-/* #product1 .pro h4{
-    margin: 0;
-} */
 #product .pro:hover{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 
@@ -270,7 +273,6 @@ margin: 0;
 #sm-banner{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 
 }
 #sm-banner .banner-box{
@@ -279,7 +281,7 @@ margin: 0;
     justify-content: center;
     align-items: flex-start ;
     background-image: url("../img/products/dress20.jpg");
-    min-width: 540px;
+    min-width: 580px;
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -313,7 +315,7 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 20px;
+    padding: 0 80px;
 }
 #banner3 .banner-box{
     display: flex;
@@ -351,10 +353,9 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../img/banner/b14.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
-    background-color: #09116a;
+    background-color: #0a115b;
 }
 #newsletter h4{
     font-size: 28px;
@@ -440,3 +441,458 @@ footer .follow i:hover{
     color: #dd78e8;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Shop page*//*
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3 ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:black;
+transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#page-header{
+    background-image: url(https://rb.gy/6azirm);
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+}
+#page-header h1,
+#page-header p{
+    color: #fff;
+    font-size: xx-large;
+}
+#page-header h1{
+    transform: scale(3);
+}
+#pagination{
+    text-align: center;
+
+}
+#pagination a{
+text-decoration: none;
+background-color: #088178;
+padding: 15px 20px;
+border-radius: 4px;
+color: #fff;
+font-weight: 600;
+
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+#product1{
+    text-align: center;
+
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+color: #606063;
+font-size: 12px;
+}
+#product1 .pro .des h5{
+padding-top: 7px;
+color: #0f0e0f;
+font-size: 14px;
+margin: 0;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+    margin: 0;
+}
+#product1 .pro .cart{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #d9edff;
+        border: 1px solid #ffffff;
+        position: absolute;
+        bottom: 10px;
+        right:  20px;
+    }
+
+#product1 .pro-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 20px;
+    padding: 5px;
+    justify-content: space-between;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #0a115b;
+}
+#newsletter h4{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    margin: 13px;
+    margin-left: 100px;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color:  #c4b2b2;
+    margin: 13px;
+    margin-left:100px;
+}
+#newsletter p span{
+    color: #8e820f;
+}
+#newsletter .form{
+    width: 40%;
+    display: flex;
+    margin-right: 20px;
+
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 80%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+#newsletter button{
+    background-color: #7a0570;
+    color: #ffffff;
+    white-space: nowrap;
+    width: 30%;
+    height: 54px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-top: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 2px;
+    margin-top: 40px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#09116a;
+    margin-bottom: 10px ;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #3d15b7;
+    padding-top: 15px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 1px solid #3a90c6;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #dd78e8;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+footer .follow h4{
+    margin: 0;
+}
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+width: 40%;
+margin-right: 50px;
+}
+#prodetails .single-pro-details{
+width: 50%;
+padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+    width: 35px;
+    height: 40px;
+}
+#prodetails .single-pro-details button{
+    background: #088178;
+    color: #fff;
+    height: 40px;
+    width: 110px;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query*/
+@media (max-width:799px){
+    .section-p1{
+        padding:40px 40px
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ;
+
+    }
+    #navbar.active{
+        right: 0px;
+        }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #navbar.active{
+        right: 0px;
+        }
+        #mobile{
+            display: flex;
+            align-items: center;
+        
+        }
+        #mobile i{
+            padding-left: 20px;
+            color: #05157e;
+        }
+        #close{
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30;
+            color: #3d15b7;
+            font-size: 24px;
+        }
+        #lg-bag{
+            display: none;
+        }
+        #hero{
+            height: 70vh;
+            padding: 0 0;
+            background-position: top 30%;
+        }
+        #feature{
+            justify-content: center;
+        }
+        #feature .fe-box{
+            margin: 15px 15px;
+            
+        }
+        #product1 .pro-container{
+            justify-content: center;
+
+        }
+        #product1 .pro{
+            margin: 15px ;
+        }
+        #banner { 
+            height: 20vh;
+        }
+        #sm-banner .banner-box{
+            min-width: 100%;
+            height: 30vh;
+        }
+        #banner3{
+            padding: 0 40px;
+        }
+        #banner3 .banner-box{
+            width: 28%;
+        }
+        #newsletter .form{
+            width: 100%;
+        }
+    }
+    @media(max-width:477px){
+        .section-p1{
+            padding: 20px;
+        }
+            #header{
+                padding:20px 30px;
+            }
+            
+            #hero{
+                padding:0 20px;
+                background-position: 55%;
+            } 
+            #feature {
+                justify-content: space-between;
+            }
+            #feature .fe-box{
+                width: 155px;
+                margin: 0 0 15px 0;
+            }
+            #product1 .pro{
+                width: 100%;
+            }
+            #banner{
+                height: 40vh;
+            }
+            #sm-banner .banner-box{
+                height: 40vh;
+            }
+            #sm-banner .banner-box2{
+                margin-top: 20px;
+            }
+            #banner3{
+                padding :0 20px;
+            }
+            #newsletter .form{
+                width: 100%;
+            }
+    }

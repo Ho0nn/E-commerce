@@ -10,19 +10,29 @@
 
 </head>
 <body>
+    
     <!-- NavBar-->
     <section id="header">
         <a href="#">
             <img src="img/logo/logo.png" class="logo" alt="">
         </a>
         <div><ul id="navbar">
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>  
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #57034f ;"></i></a></li>
-        </ul></div></section>
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+        
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #57034f ;"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+    </section>
     <!--ad-->
     <section id="hero">
             <h4>Trade-in-offer</h4>
@@ -438,6 +448,6 @@
             <img src="img/pay/pay.png" alt="">
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html> 
