@@ -892,6 +892,9 @@ padding-top: 30px;
             #banner3{
                 padding :0 20px;
             }
+            #newsletter{
+                padding: 40px 20px;
+            }
             #newsletter .form{
                 width: 100%;
             }
